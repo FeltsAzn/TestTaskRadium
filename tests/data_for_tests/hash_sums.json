@@ -1,0 +1,41 @@
+{
+    "README.md": {
+        "hash_sum": "8cf77a685a9b2b729f3b3ff4941e5efdbd07888ccfa96923fd1036dffe25314f"
+    },
+    "LICENSE": {
+        "hash_sum": "f2ec607f67bb0dd3053b49835b02110d5cd0f8eb6da3aac4dc0b142a6b299be9"
+    },
+    "flake8.toml": {
+        "hash_sum": "3f9995629450d6c4d40abd79c5be785cf6a665de48b7688994f17135e03562ae"
+    },
+    "darglint.toml": {
+        "hash_sum": "e9d9941a4f06cacbfb2df1c9ede98db32177ef2a1c641324a46f573a8953ff64"
+    },
+    "styleguide.toml": {
+        "hash_sum": "c6c1eaf9d2a84a02474221969810f8485278eaef4653e9db2f1220f0989d556d"
+    },
+    "file-structure.toml": {
+        "hash_sum": "92441118662c296b3a385be8950681bbf0a6795ccd7d854106f3c69dd39c6234"
+    },
+    "editorconfig.toml": {
+        "hash_sum": "7e94c7f4bdfb46be0781c3d734da8389b921254b8fbaad261297cf09d4120383"
+    },
+    "pytest.toml": {
+        "hash_sum": "3830c00d8141fa6b3409abffd357a9caaab54953f0dbacafc3a9fc9b9ceaae98"
+    },
+    "all.toml": {
+        "hash_sum": "700f111c1037259067f406c063c3286d1a32e76b9106931bd931ead61975c100"
+    },
+    "isort.toml": {
+        "hash_sum": "ef2258e7bbbbf51e3bd1012c23a0006233babca23d5c6bf38bad689d8f2f92e1"
+    },
+        "master.zip": {
+        "hash_sum": "0c6588805947096d7161e33dbb8b234acdcfa11f096f14983508be6f3c1ba21d"
+    },
+        "master.tar.gz": {
+        "hash_sum": "9944956bf843ea3e93f59744d928e30651b11fcd03b70a425232b39141121483"
+    },
+        "master.bundle": {
+        "hash_sum": "10de1b8c756cb43c0565d4a45b30177f0ad0b20f88f1ea9f68c7054c571417fd"
+    }
+}
