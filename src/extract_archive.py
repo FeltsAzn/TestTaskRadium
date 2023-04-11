@@ -1,40 +1,27 @@
-"""Extract downloaded repository archive.
-
-Functions:
-- extract: recursive function for find zip archive in repository
-- decompress_zip: decompress found zip file
-"""
-
 import os
-import pathlib
 from zipfile import ZipFile
 
 
-def extract(path: str) -> None:
-    """Recursive searching.
+class Extractor:
+    def __init__(self, path: str):
+        self.path = path
 
-    Args:
-        path (str): Start path to searching repository
-    """
-    files = pathlib.Path(path)
-    if files.iterdir():
-        for found_file in files.iterdir():
-            file_path = found_file.as_posix()
+    def start_extracting(self):
+        zipfile_path = self.find_zipfile()
+        self.decompress_zip(file_path=zipfile_path)
 
-            filename = found_file.name
-            if filename.endswith('.zip'):
-                decompress_zip(file_path=file_path)
+    def find_zipfile(self) -> str:
+        for foldername, _, filenames in os.walk(self.path):
+            for filename in filenames:
+                if filename.endswith('.zip'):
+                    file_path = os.path.join(foldername, filename)
+                    return file_path
 
-
-def decompress_zip(file_path: str) -> None:
-    """Decompress a zip archive.
-
-    Args:
-        file_path (str): Path to the zip archive file.
-    """
-    base_folder = 'repository'
-    if not os.path.exists(base_folder):
-        os.mkdir(base_folder)
-    with ZipFile(file_path) as zip_object:
-        zip_object.extractall(path=base_folder)
-    os.remove(file_path)
+    @staticmethod
+    def decompress_zip(file_path: str) -> None:
+        base_folder = 'repository'
+        if not os.path.exists(base_folder):
+            os.mkdir(base_folder)
+        with ZipFile(file_path) as zip_object:
+            zip_object.extractall(path=base_folder)
+        os.remove(file_path)
