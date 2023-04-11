@@ -1,6 +1,6 @@
 import pytest
 from src.download_recursive import DownloadRepository
-from tests.utils.load_data import load_html_page, find_dirs
+from tests.utils.tools import load_html_page, find_dirs
 from tests.utils.datasets import *
 
 

@@ -1,7 +1,7 @@
 import asyncio
 import pytest
 from src.download_utils import download_page
-from tests.utils.load_data import load_html_page, clear_csrf_token
+from tests.utils.tools import load_html_page, clear_csrf_token
 from tests.utils.datasets import *
 
 
